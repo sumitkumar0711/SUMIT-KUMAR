@@ -1,6 +1,9 @@
 waste = input()
 var1 = input().split()
 var = [int(s) for s in var1]
-delval = min(var)
-var.remove(delval)
-print(min(var))
+deletevalue = min(var)
+var.remove(deletevalue)
+if(len(var) == 1):
+    print("1")
+else:
+    print(min(var))
